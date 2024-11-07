@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y formularios</title>
+</head>
+<body>
+    <h1>Tablas y formularios</h1>
+</body>
+
+    <table border="1px">
+
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Correo</td>
+        </tr>
+            <td>Oscar</td>
+            <td>Munoz</td>
+            <td>munozoscarmichel@gmail.com</td>
+        <tr>
+            <td>Maya</td>
+            <td>Rudolph</td>
+            <td>myard@djeed.com</td>
+        
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>formularios</h2>
+
+    <form action="archivo que procesa_los_datos.php">
+
+<!--Atributos aceptados por el input de text: Placeholder, Required, Disabled, Name-->
+        <label for="nombre_de_usuario">Nombre</label>
+        <input name="nombre_de_usuario" type="text" placeholder="Nombre" required>
+        <label for="Correo">Email</label>
+        <input name="Correo" type="email" placeholder="e-mail" required>
+        <br>
+        <label for="comentarios">comentarios</label>
+        <br>
+        <textarea name="comentarios" rows="10" cols="50"></textarea>
+
+        <!--Select-->
+
+        <label for="Sabores"></label>
+        <br>
+        <select name="Sabores">
+        <option value="selected Disabled hidden">Selecciona una opcion</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Fresa">Fresa</option>
+    </select>
+    <br>
+    <!--Radio-->
+    <label for="Genero">Genero</label>
+    <br>
+    <input type="radio" name="Genero"> Masculino
+    <input type="radio" name="Genero"> Femenino
+    <br>
+    <!--Checkbox-->
+<label for="Terminos">Aceptas nuestros terminos y condiciones:</label>
+<br>
+<input type="checkbox"> Si
+<br>
+<!--Enviar/Submit-->
+<button type="submit">--Enviar</button>
+
+</form>
+
+    
+</html>
